@@ -38,7 +38,7 @@ public class HomeController {
 		arr.add("b");
 		arr.add("c");
 		
-		model.addAttribute("serverTime", arr );
+		model.addAttribute("ser", arr );
 		
 		return "home";
 	}
