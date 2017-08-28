@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * Handles requests for the application home page.
@@ -32,13 +33,8 @@ public class HomeController {
 		
 		String formattedDate = dateFormat.format(date);
 		
-		ArrayList<String> arr = new ArrayList<String>();
 		
-		arr.add("a");
-		arr.add("b");
-		arr.add("c");
-		
-		model.addAttribute("ser", arr );
+		ModelAndView mv = new ModelAndView();
 		
 		return "home";
 	}
